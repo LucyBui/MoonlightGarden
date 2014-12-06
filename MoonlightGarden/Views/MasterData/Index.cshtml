@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.ActiveLink = "Administration";
+}
+
+<ol class="breadcrumb">
+    <li>Administration</li>
+    <li class="active">Master Data</li>
+</ol>
+
+<ul class="nav nav-tabs nav-justified">
+        @foreach (var item in ViewBag.MasterDataType)
+        {
+            <li><a href="MasterData/@item">@item</a></li>
+        }
+</ul>

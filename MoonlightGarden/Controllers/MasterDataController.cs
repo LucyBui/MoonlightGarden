@@ -11,18 +11,13 @@ namespace MoonlightGarden.Controllers
     public class MasterDataController : Controller
     {
         private MasterDataService masterDataService = AppContext.getBean<MasterDataService>();
-        // GET: MasterData
-        public ActionResult Index()
-        {
-            ViewBag.MasterDataType = Enum.GetValues(typeof(MasterDataType));
-            return View();
-        }
-
+        private SeedingService seedingService = AppContext.getBean<SeedingService>();
+        // GET: MasterData/{id}
         public ActionResult Details(string id)
         {
             if (id == null)
             {
-                id = MasterDataType.Card.ToString();
+                return RedirectToAction("Details", new { id = "Card" });
             }
             ViewBag.MasterDataType = Enum.GetValues(typeof(MasterDataType));
             ViewBag.Type = id;
@@ -42,6 +37,12 @@ namespace MoonlightGarden.Controllers
                     datas = masterDataService.FindByType<Skill>(id); break;
             }
             return View(datas);
+        }
+        // GET: Administration/Import/{id}
+        public ActionResult Import(string id)
+        {
+            seedingService.ImportMasterData(id);
+            return RedirectToAction("Details", new { id = id });
         }
     }
 }

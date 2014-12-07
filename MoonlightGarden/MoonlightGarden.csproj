@@ -215,7 +215,43 @@
     <Content Include="Content\bootstrap\js\npm.js" />
     <Content Include="Content\common.css" />
     <Content Include="Content\reset.css" />
+    <Content Include="Content\ui\barrackportrait\brunie_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\brunie_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\fighter_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\fighter_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\idgebattle_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\idgebattle_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\idge_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\idge_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\musketeer_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\musketeer_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\scout_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\scout_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\soldier_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\soldier_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\warlock_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\warlock_f_barrack_on.bmp" />
+    <Content Include="Content\ui\barrackportrait\wizard_f_barrack_off.bmp" />
+    <Content Include="Content\ui\barrackportrait\wizard_f_barrack_on.bmp" />
     <Content Include="Content\ui\ge_logo.png" />
+    <Content Include="Content\ui\illust\it_m_elementalist.bmp" />
+    <Content Include="Content\ui\illust\it_m_fieldplate.bmp" />
+    <Content Include="Content\ui\illust\it_m_joustocoprs.bmp" />
+    <Content Include="Content\ui\illust\it_m_studdedleatherarmor.bmp" />
+    <Content Include="Content\ui\illust\it_w_claudeniquet.bmp" />
+    <Content Include="Content\ui\illust\it_w_lordofelemental.bmp" />
+    <Content Include="Content\ui\illust\it_w_moonstonerod.bmp" />
+    <Content Include="Content\ui\illust\it_w_muertebalada.bmp" />
+    <Content Include="Content\ui\illust\it_w_persqabz.bmp" />
+    <Content Include="Content\ui\illust\it_w_pizarro.bmp" />
+    <Content Include="Content\ui\illust\it_w_staffofgnosis.bmp" />
+    <Content Include="Content\ui\illust\it_w_thefinisher.bmp" />
+    <Content Include="Content\ui\illust\it_w_yeganehsword.bmp" />
+    <Content Include="Content\ui\monster\gehcos.gif" />
+    <Content Include="Content\ui\monster\haunted_candle.gif" />
+    <Content Include="Content\ui\monster\Monster_Gehvarsboss.jpg" />
+    <Content Include="Content\ui\monster\recluse.gif" />
+    <Content Include="Content\ui\monster\wild_dog.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -251,13 +287,17 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\MasterData\Index.cshtml" />
     <Content Include="Views\MasterData\Details.cshtml" />
     <Content Include="Views\MasterData\_Card.cshtml" />
+    <Content Include="Views\MasterData\_Equip.cshtml" />
+    <Content Include="Views\MasterData\_Monster.cshtml" />
+    <Content Include="Views\MasterData\_Skill.cshtml" />
+    <Content Include="Views\MasterData\_Zone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\" />
+    <Folder Include="Content\ui\illust\bg\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

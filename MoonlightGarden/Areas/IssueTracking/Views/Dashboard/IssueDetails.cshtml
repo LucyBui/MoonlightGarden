@@ -1,0 +1,41 @@
+﻿@model MoonlightGarden.Framework.Domain.IssueTracking.Issue
+
+@{
+    ViewBag.Title = String.Format("{0}/{1}", ViewBag.ProjectName, Model.Id);
+}
+
+<p>
+    @Html.ActionLink("Create a Sub Task", "Create", "Issue", new { id = Model.ProjectId, parentId = Model.Id }, null)
+</p>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Project", "Details", "Dashboard", new { id = Model.ProjectId }, null)
+</p>

@@ -1,0 +1,4 @@
+﻿<img data-ng-src="{{cardImgUri | format:card.CardId:active ? 'on' : 'off'}}" style="cursor:pointer;" 
+     data-ng-click="active ? removeFromTeam(id) : addToTeam(id)" />
+<br />
+{{Family.Card[id].CardName}} [{{Family.Card[id].Rank}}]

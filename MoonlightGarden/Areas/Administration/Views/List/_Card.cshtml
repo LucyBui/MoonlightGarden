@@ -1,0 +1,89 @@
+﻿@model IEnumerable<MoonlightGarden.Framework.Domain.Master.CardBase>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CON)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArmorUsable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WeaponUsable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Buff)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuffLevel)
+        </th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="~//ui/barrackportrait/@(item.Id)_f_barrack_off.bmp" /><br />
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CON)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArmorUsable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WeaponUsable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Buff)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuffLevel)
+        </td>
+    </tr>
+}
+</table>

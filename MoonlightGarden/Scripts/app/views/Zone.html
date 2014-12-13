@@ -1,0 +1,64 @@
+﻿<h4>{{Zone.Name}}</h4>
+<hr />
+<label><input type="checkbox" data-ng-model="warp" /> Warp List</label>
+<div data-ng-show="warp">
+    <input type="button" class="btn btn-default" value="To the Barracks" data-ng-click="moveTo()" />
+    <div data-ng-repeat="zone in Zone.Points">
+        <input type="button" class="btn btn-default" value="{{zone.Name}}" data-ng-click="moveTo(zone.Id)" />
+    </div>
+    <div data-ng-if="isSafeZone(Zone.Type)">
+        <h4>Way Point</h4>
+        <div data-ng-repeat="zone in Zone.WayPoint">
+            <input type="button" class="btn btn-default" value="{{zone.Name}}" data-ng-click="moveTo(zone.Id)" />
+        </div>
+    </div>
+    <br />
+</div>
+<div data-ng-if="!isSafeZone(Zone.Type)">
+    <table class="table">
+        <tr>
+            <td colspan="{{Zone.Monsters.length}}" style="text-align: center;">
+                <img data-ng-src="{{bossImgUri | format:Zone.Boss.Id}}" style="width: 90px; height: 90px;" /><br />
+                <span>{{Zone.Boss.Name}} [{{Zone.Boss.Type}}]</span><br />
+                <span>HP {{Zone.Boss.HP}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td data-ng-repeat="Mob in Zone.Monsters">
+                <img data-ng-src="{{mobImgUri | format:Mob.Id}}" /><br />
+                <span>{{Mob.Name}} [{{Mob.Type}}]</span><br />
+                <span>HP {{Mob.HP}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="{{Zone.Monsters.length}}" style="text-align: center;">
+                <input type="button" class="btn btn-default" value="ATTACK" data-ng-click="explore()" />
+            </td>
+        </tr>
+    </table>
+</div>
+<table class="table">
+    <tr>
+        <td data-ng-repeat="Card in CombatTeam" style="vertical-align: top;">
+            <img data-ng-src="{{cardImgUri | format:Card.CardId:'off'}}" /><br />
+            <span>{{Card.OriginalCard.Name}} [{{Card.Rank}}]</span><br />
+            <span>HP {{Card.Rate.HP}}</span><br />
+            <label><input type="checkbox" data-ng-model="info" /> Character Information</label><br />
+            <span data-ng-show="info">
+                <strong>Status</strong><br />
+                <span>STR {{Card.OriginalCard.STR}}</span><br />
+                <span>AGI {{Card.OriginalCard.AGI}}</span><br />
+                <span>CON {{Card.OriginalCard.CON}}</span><br />
+                <span>DEX {{Card.OriginalCard.DEX}}</span><br />
+                <span>INT {{Card.OriginalCard.INT}}</span><br />
+                <span>SEN {{Card.OriginalCard.SEN}}</span><br />
+                <strong>ATK</strong><br />
+                <span>AR {{Card.Rate.AR}}</span><br />
+                <span>Atk {{Card.Rate.Atk}}</span><br />
+                <strong>DEF</strong><br />
+                <span>DR {{Card.Rate.AR}}</span><br />
+                <span>Def {{Card.Rate.Atk}}</span>
+            </span>
+        </td>
+    </tr>
+</table>

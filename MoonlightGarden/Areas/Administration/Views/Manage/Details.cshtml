@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = ViewBag.Type;
+}
+<p>
+    @Html.ActionLink("Back to Master Data Management", "Index")
+</p>
+<ul class="nav nav-tabs nav-justified">
+@foreach (var item in ViewBag.MasterDataType)
+{
+    <li @(item.ToString() == ViewBag.Type ? "class=active" : "")><a href="@item">@item</a></li>
+}
+</ul>
+<p>
+    @Html.ActionLink("Import Data", "Import", new { id = ViewBag.Type })
+</p>
+@Html.Partial(String.Format("~/Areas/Administration/Views/List/_{0}.cshtml", (string)ViewBag.Type), (object)Model)
+<p>
+    @Html.ActionLink("Back to Master Data Management", "Index")
+</p>

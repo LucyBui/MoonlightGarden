@@ -1,0 +1,38 @@
+﻿<h4>{{Zone.Name}}</h4>
+<hr />
+<h4>Battle Report</h4>
+<dl>
+    <dd data-ng-repeat="Log in BattleReport">{{Log}}</dd>
+</dl>
+<table class="table">
+    <tr>
+        <td colspan="{{Zone.Monsters.length}}" style="text-align: center;">
+            <img data-ng-src="{{bossImgUri | format:Zone.Boss.Id}}" style="width: 90px; height: 90px;" /><br />
+            <span>{{Zone.Boss.Name}} [{{Zone.Boss.Type}}]</span><br />
+            <span>HP {{Zone.Boss.HP}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td data-ng-repeat="Mob in Zone.Monsters" style="text-align: center;">
+            <img data-ng-src="{{mobImgUri | format:Mob.Id}}" /><br />
+            <span>{{Mob.Name}} [{{Mob.Type}}]</span><br />
+            <span>HP {{Mob.HP}}</span>
+        </td>
+    </tr>
+</table>
+<h4 style="text-align: center;">VS</h4>
+<table class="table">
+    <tr>
+        <td data-ng-repeat="Card in CombatTeam" style="vertical-align: top; text-align: center;">
+            <img data-ng-src="{{cardImgUri | format:Card.CardId:'off'}}" /><br />
+            <span>{{Card.Name}}</span><br />
+            <span>HP {{Card.Rate.HP}}</span><br />
+            <strong>ATK</strong><br />
+            <span>AR {{Card.Rate.AR}}</span><br />
+            <span>Atk {{Card.Rate.Atk}}</span><br />
+            <strong>DEF</strong><br />
+            <span>DR {{Card.Rate.AR}}</span><br />
+            <span>Def {{Card.Rate.Atk}}</span>
+        </td>
+    </tr>
+</table>

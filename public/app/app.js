@@ -1,1 +1,1 @@
-angular.module('mgApp', ['ngRoute']);
+angular.module('mgApp', ['ngRoute', 'ngResource']);

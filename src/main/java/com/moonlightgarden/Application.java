@@ -12,7 +12,6 @@ import com.moonlightgarden.service.SeedingService;
 public class Application {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     ApplicationContext appContext = SpringApplication.run(Application.class, args);
     SeedingService seedingService = appContext.getBean(SeedingService.class);
     seedingService.seedMasterData();

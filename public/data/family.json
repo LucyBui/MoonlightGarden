@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "data": {
+    "Profile": {
+      "Id": "mizzlinhie",
+      "Name": "Hara",
+      "Level": 31,
+      "Title": "None",
+      "Reputation": 50291,
+      "Team": [],
+      "SavedLocation": "reboldoeux",
+      "LastLocation": "reboldoeux"
+    },
+    "Cards": {
+      "mizzlinhie_fighter_1": {
+        "Id": "mizzlinhie_fighter_1",
+        "Name": "",
+        "Rank": "Settle",
+        "CardId": "fighter",
+        "FamilyId": "mizzlinhie"
+      },
+      "mizzlinhie_musketeer_2": {
+        "Id": "mizzlinhie_musketeer_2",
+        "Name": "",
+        "Rank": "Settle",
+        "CardId": "musketeer",
+        "FamilyId": "mizzlinhie"
+      },
+      "mizzlinhie_scout_3": {
+        "Id": "mizzlinhie_scout_3",
+        "Name": "",
+        "Rank": "Settle",
+        "CardId": "scout",
+        "FamilyId": "mizzlinhie"
+      },
+      "mizzlinhie_wizard_4": {
+        "Id": "mizzlinhie_wizard_4",
+        "Name": "",
+        "Rank": "Settle",
+        "CardId": "wizard",
+        "FamilyId": "mizzlinhie"
+      },
+      "mizzlinhie_warlock_5": {
+        "Id": "mizzlinhie_warlock_5",
+        "Name": "",
+        "Rank": "Settle",
+        "CardId": "warlock",
+        "FamilyId": "mizzlinhie"
+      }
+    },
+    "Equips": {}
+  }
+}

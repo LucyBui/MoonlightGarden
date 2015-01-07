@@ -1,5 +1,9 @@
+body {
+  background: #fff url('../ge_bg.jpg') no-repeat fixed top;
+}
+
 div#wrapper {
-    margin-top: 51px;
+  margin-top: 51px;    
 }
 
 .navbar-brand img {

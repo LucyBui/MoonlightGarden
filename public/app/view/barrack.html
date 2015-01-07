@@ -1,0 +1,39 @@
+<h4>{{Family.Profile.Name}} Family (Lvl {{Family.Profile.Level}})</h4>
+<hr />
+<input type="button" class="btn btn-default" value="Saved Location" data-ng-click="moveTo(Family.Profile.SavedLocation)" />
+<input type="button" class="btn btn-default" value="Last Location" data-ng-click="moveTo(Family.Profile.LastLocation)" />
+<h4>Team Select</h4>
+<table>
+  <tr>
+    <td data-ng-repeat="id in Family.Profile.Team">
+      <img data-ng-src="{{cardImgUri | format:Family.Cards[Id].CardId:'on'}}" style="cursor:pointer;" data-ng-click="removeCard(Id)" /><br />
+      {{Family.Cards[id].OriginalCard.Name}} [{{Family.Cards[id].Rank}}]
+    </td>
+  </tr>
+</table>
+<h4>Character List</h4>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>STR</th>
+    <th>AGI</th>
+    <th>CON</th>
+    <th>DEX</th>
+    <th>INT</th>
+    <th>SEN</th>
+  </tr>
+  <tr data-ng-repeat="(Id, Card) in Family.Cards">
+    <td>
+      <img data-ng-src="{{cardImgUri | format:Family.Cards[Id].CardId:'off'}}" style="cursor:pointer;" data-ng-click="addCard(Id)" /><br />
+      {{Card.OriginalCard.Name}} [{{Card.Rank}}]
+    </td>
+    <td>{{Card.OriginalCard.Class}}</td>
+    <td>{{Card.OriginalCard.STR}}</td>
+    <td>{{Card.OriginalCard.AGI}}</td>
+    <td>{{Card.OriginalCard.CON}}</td>
+    <td>{{Card.OriginalCard.DEX}}</td>
+    <td>{{Card.OriginalCard.INT}}</td>
+    <td>{{Card.OriginalCard.SEN}}</td>
+  </tr>
+</table>

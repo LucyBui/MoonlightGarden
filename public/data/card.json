@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "data": [
+    {"Id": "fighter", "Name": "Fighter", "Type": "Basic", "Class": "Melee", "STR": 60, "AGI": 60, "HP": 70, "DEX": 60, "INT": 40, "SEN": 50, "ArmorUsable": "Metal", "WeaponUsable": "Javelin", "Buff": "Def", "BuffLevel": 2},
+    {"Id": "musketeer", "Name": "Musketeer", "Type": "Basic", "Class": "Ranger", "STR": 50, "AGI": 60, "HP": 50, "DEX": 80, "INT": 30, "SEN": 50, "ArmorUsable": "Coat", "WeaponUsable": "Rifle", "Buff": "Atk", "BuffLevel": 2},
+    {"Id": "scout", "Name": "Scout", "Type": "Basic", "Class": "Melee", "STR": 30, "AGI": 70, "HP": 50, "DEX": 70, "INT": 50, "SEN": 50, "ArmorUsable": "Leather", "WeaponUsable": "Dagger", "Buff": "MaxHP", "BuffLevel": 1},
+    {"Id": "wizard", "Name": "Wizard", "Type": "Basic", "Class": "Magical", "STR": 30, "AGI": 50, "HP": 40, "DEX": 40, "INT": 70, "SEN": 70, "ArmorUsable": "Coat", "WeaponUsable": "Rod", "Buff": "SEN", "BuffLevel": 1},
+    {"Id": "warlock", "Name": "Elementalist", "Type": "Basic", "Class": "Magical", "STR": 30, "AGI": 30, "HP": 40, "DEX": 50, "INT": 80, "SEN": 70, "ArmorUsable": "Robe", "WeaponUsable": "Bracelet", "Buff": "INT", "BuffLevel": 1},
+    {"Id": "soldier", "Name": "Soldier of Reboldoeux", "Type": "Recruited", "Class": "Melee", "STR": 60, "AGI": 50, "HP": 70, "DEX": 40, "INT": 30, "SEN": 50, "ArmorUsable": "Metal", "WeaponUsable": "Polearm", "Buff": "MaxHP", "BuffLevel": 2},
+    {"Id": "brunie", "Name": "Brunie Etienne", "Type": "Recruited", "Class": "Ranger", "STR": 40, "AGI": 90, "HP": 40, "DEX": 70, "INT": 30, "SEN": 50, "ArmorUsable": "Coat", "WeaponUsable": "Pistol", "Buff": "Atk", "BuffLevel": 1},
+    {"Id": "idge", "Name": "Idge Imbrulia", "Type": "Recruited", "Class": "Melee", "STR": 60, "AGI": 70, "HP": 60, "DEX": 60, "INT": 30, "SEN": 50, "ArmorUsable": "Metal", "WeaponUsable": "GreatSword", "Buff": "Atk", "BuffLevel": 1},
+    {"Id": "idgebattle", "Name": "Battle Smith Idge", "Type": "Limited", "Class": "Melee", "STR": 70, "AGI": 80, "HP": 60, "DEX": 60, "INT": 30, "SEN": 50, "ArmorUsable": "Metal", "WeaponUsable": "GreatSword", "Buff": "Atk", "BuffLevel": 2}
+  ]
+}

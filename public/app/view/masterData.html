@@ -1,0 +1,38 @@
+<ul class="nav nav-tabs nav-justified">
+  <li data-ng-repeat="type in TypeList" data-ng-class="{active:type === Type}">
+    <a href="#/MasterData/{{type}}">{{type}}</a>
+  </li>
+</ul>
+<div data-ng-switch="Type">
+  <div data-ng-switch-when="Card" data-ng-repeat="Card in List" class="col-md-4">
+    <div data-ng-bind="Card.Name"></div>
+    <div class="col-md-4"><img data-ng-src="{{cardImgUri | format:Card.Id:'off'}}" /></div>
+    <div class="col-md-8">
+      <div class="col-md-6">STR</div><div class="col-md-6" data-ng-bind="Card.STR"></div>
+      <div class="col-md-6">AGI</div><div class="col-md-6" data-ng-bind="Card.AGI"></div>
+      <div class="col-md-6">CON</div><div class="col-md-6" data-ng-bind="Card.HP"></div>
+      <div class="col-md-6">DEX</div><div class="col-md-6" data-ng-bind="Card.DEX"></div>
+      <div class="col-md-6">INT</div><div class="col-md-6" data-ng-bind="Card.INT"></div>
+      <div class="col-md-6">SEN</div><div class="col-md-6" data-ng-bind="Card.SEN"></div>
+      <div class="col-md-6">Buff</div><div class="col-md-6" data-ng-bind="buffInfo(Card.Buff, Card.BuffLevel)"></div>
+    </div>
+  </div>
+  <div data-ng-switch-when="Equip" data-ng-repeat="Equip in List" class="col-md-4">
+    <div data-ng-bind="Equip.Name"></div>
+    <div class="col-md-4"><img data-ng-src="{{equipImgUri | format:Equip.Id}}" /></div>
+    <div class="col-md-8">
+      <div class="col-md-6" data-ng-bind="Equip.EquipType"></div>
+      <div class="col-md-6" data-ng-bind="Equip.Type"></div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Weapon'">AR</div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Weapon'" data-ng-bind="Equip.Extend.AR"></div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Weapon'">Atk</div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Weapon'" data-ng-bind="Equip.Extend.Atk"></div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Armor'">DR</div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Armor'" data-ng-bind="Equip.Extend.DR"></div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Armor'">Def</div>
+      <div class="col-md-6" data-ng-if="Equip.EquipType === 'Armor'" data-ng-bind="Equip.Extend.Def"></div>
+    </div>
+  </div>
+  <div data-ng-switch-when="Zone" data-ng-repeat="Zone in List" class="col-md-4"></div>
+  <div data-ng-switch-when="Monster" data-ng-repeat="Monster in List" class="col-md-4"></div>
+</div>

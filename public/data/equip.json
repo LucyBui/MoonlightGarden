@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": [
+    {"Id": "it_m_fieldplate", "Name": "Mysterious Metal Armor of Pioneer", "EquipType": "Armor", "Type": "Metal", "Extend": {"DR": 26, "Def": 197}},
+    {"Id": "it_m_studdedleatherarmor", "Name": "Mysterious Leather Armor of Pioneer", "EquipType": "Armor", "Type": "Leather", "Extend": {"DR": 26, "Def": 172}},
+    {"Id": "it_m_joustocoprs", "Name": "Mysterious Coat of Pioneer", "EquipType": "Armor", "Type": "Coat", "Extend": {"DR": 26, "Def": 147}},
+    {"Id": "it_m_elementalist", "Name": "Mysterious Robe of Pioneer", "EquipType": "Armor", "Type": "Robe", "Extend": {"DR": 26, "Def": 147}},
+
+    {"Id": "it_w_pizarro", "Name": "Mysterious Javelin of Pioneer", "EquipType": "Weapon", "Type": "Javelin", "Extend": {"AR": 29, "Atk": 237}},
+    {"Id": "it_w_persqabz", "Name": "Mysterious Dagger of Pioneer", "EquipType": "Weapon", "Type": "Dagger", "Extend": {"AR": 29, "Atk": 158}},
+    {"Id": "it_w_thefinisher", "Name": "Mysterious Rifle of Pioneer", "EquipType": "Weapon", "Type": "Rifle", "Extend": {"AR": 29, "Atk": 336}},
+    {"Id": "it_w_staffofgnosis", "Name": "Mysterious Staff of Pioneer", "EquipType": "Weapon", "Type": "Staff", "Extend": {"AR": 29, "Atk": 264}},
+    {"Id": "it_w_moonstonerod", "Name": "Mysterious Rod of Pioneer", "EquipType": "Weapon", "Type": "Rod", "Extend": {"AR": 29, "Atk": 264}},
+    {"Id": "it_w_lordofelemental", "Name": "Mysterious Special Bracelet of Pioneer", "EquipType": "Weapon", "Type": "Bracelet", "Extend": {"AR": 29, "Atk": 220}},
+    {"Id": "it_w_muertebalada", "Name": "Mysterious Polearm of Pioneer", "EquipType": "Weapon", "Type": "Polearm", "Extend": {"AR": 29, "Atk": 297}},
+    {"Id": "it_w_claudeniquet", "Name": "Mysterious Pistol of Pioneer", "EquipType": "Weapon", "Type": "Pistol", "Extend": {"AR": 29, "Atk": 237}},
+    {"Id": "it_w_yeganehsword", "Name": "Mysterious Great Sword of Pioneer", "EquipType": "Weapon", "Type": "GreatSword", "Extend": {"AR": 29, "Atk": 237}}
+  ]
+}
